@@ -1,0 +1,23 @@
+[project]
+name = "sbca-broadening"
+version = "0.1.0"
+description = "Analytical estimates of geometric energy broadening in Johann-type X-ray Rowland spectrometers."
+authors = [
+    {name = "Anthony Gironda",email = "tonygironda@yahoo.com"}
+]
+license = "MIT"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "numpy (>=2.0,<2.5)"
+]
+readme = "README.md"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
